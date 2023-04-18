@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        BODY {
+            background-image: url("img/Group\ 22.png"), linear-gradient( #AFCDE9, #AF7ED0);
+            background-repeat: no-repeat;
+        }
+        
+        .logo {
+            position: relative;
+            WIDTH: 250PX;
+        }
+        
+        h1 {
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        
+        h4 {
+            color: grey;
+        }
+        
+        .part1 {
+            border-radius: 5PX;
+            border: 5PX white;
+            background-color: aliceblue;
+            margin: 22px 268px;
+            padding: 32px 60px;
+        }
+        
+        .part2 {
+            border-radius: 5PX;
+            border: 5PX white;
+            background-color: aliceblue;
+            margin: 22px 268px;
+            padding: 32px 60px;
+        }
+        
+        .part3 {
+            border-radius: 5PX;
+            border: 5PX white;
+            background-color: aliceblue;
+            margin: 22px 268px;
+            padding: 32px 60px;
+        }
+        
+        input {
+            PADDING: 15PX 350PX 20PX 50PX;
+            font-size: 20px;
+            margin: 42px 74px;
+            border-radius: 5px;
+        }
+        
+        button {
+            padding: 15px 40px;
+            margin: 10px 10px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        
+        .back {
+            margin-left: 262px;
+        }
+        
+        .submit {
+            margin-left: 677px;
+            background-color: #aecce8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-div">
+        <form>
+            <img class="logo" src="C:\Users\jay giram\Desktop\project\img\whitelogo png.png" />
+
+            <h1>Canteen Information</h1>
+            <DIV class="part1">
+
+                <h2> Canteen details </h2>
+                <h4>Name, address and location</h4>
+                <input type="text" name="canteen name" placeholder="Canteen name" required></br>
+                <input type="text" name="canteen address" placeholder="Canteen complete address" required>
+
+
+            </DIV>
+
+
+            <DIV class="part2">
+
+                <h2> Contact numbers at canteen </h2>
+                <h4>your coustomers will call on this number for genral enquiries</h4>
+                <input type="tel" id="phone" name="phone" placeholder="Mobile number at canteen" pattern="[0-9]{10}" required> </br>
+                <hr aria-placeholder="or want to share landline number">
+                <input type="text" name="Landline" placeholder="STD code | Landline number">
+
+
+
+            </DIV>
+
+            <DIV class="part3">
+
+                <h2> Canteen owner details </h2>
+                <h4>These will be use to share revenue related communication</h4>
+                <input type="text" name="canteen name" placeholder="Canteen owner name" required></br>
+                <input type="text" name="canteen address" placeholder="Owner email address" required>
+
+
+            </DIV>
+
+            <div class="buttons">
+                <button class="back" type="cancle" value="Go back">Go back </button>
+                <button class="submit" type="submit" value="submit">Next</button>
+
+            </div>
+
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>

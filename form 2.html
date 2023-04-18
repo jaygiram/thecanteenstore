@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        BODY {
+            background-image: url("img/Group\ 22.png"), linear-gradient( #AFCDE9, #AF7ED0);
+            background-repeat: no-repeat;
+        }
+        
+        .logo {
+            position: relative;
+        }
+        
+        h1 {
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        
+        h4 {
+            color: grey;
+        }
+        
+        .part1 {
+            border-radius: 5PX;
+            border: 5PX white;
+            background-color: aliceblue;
+            margin: 22px 268px;
+            padding: 32px 60px;
+        }
+        
+        .part2 {
+            border-radius: 5PX;
+            border: 5PX white;
+            background-color: aliceblue;
+            margin: 22px 268px;
+            padding: 32px 60px;
+        }
+        
+        span {
+            color: gray;
+        }
+        
+        label {
+            font-size: 25px;
+        }
+        
+        button {
+            padding: 15px 40px;
+            margin: 10px 10px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        
+        .back {
+            margin-left: 262px;
+        }
+        
+        .submit {
+            margin-left: 677px;
+            background-color: #aecce8;
+        }
+        
+        th {
+            padding: 11px 160px;
+        }
+        
+        td {
+            padding: 11px 169px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-div">
+        <form>
+            <img class="logo" src="C:\Users\jay giram\Desktop\project\img\whitelogo png.png" />
+
+            <h1>Canteen Information</h1>
+            <DIV class="part1">
+
+                <h2> Establishment type</h2>
+                <h4>Select most relevant category for your Canteen type</h4>
+                <input type="radio" id="first" name="option" value="first">
+                <label for="first">Both, delivery and dine-in available</label><br>
+                <span>Select this option when you have a place for customers to dine-in and also want to activate online ordering for your restaurant</span><br>
+                <br>
+                <br>
+                <input type="radio" id="second" name="option" value="second">
+                <label for="css">Dine-in only</label><br>
+                <span>Select when you donot want to register for online ordering</span><br>
+                <br>
+                <br>
+
+                <input type="radio" id="third" name="option" value="third">
+                <label for="javascript">Delivery onlys</label><br>
+                <span>Select when you donot have a facility for customers to dine-in (like delivery kitchens)</span>
+
+
+            </DIV>
+
+
+            <DIV class="part2">
+
+                <h2>Canteen operational hours </h2>
+                <h4>Mark Canteen opening and closing hours</h4>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <label for="appt">Open at</label>
+                            </th>
+
+
+                            <th> <label for="appt">Close at</label>
+
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="time" id="appt" name="appt">
+                            </td>
+
+                            <td>
+                                <input type="time" id="appt" name="appt">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>Make open days</h2>
+                <h4>Don't forgot to uncheck yourboff-day</h4>
+
+                <input type="checkbox">
+                <label>Monday</label><br>
+                <input type="checkbox">
+                <label>Tuesday</label><br>
+                <input type="checkbox">
+                <label>Wednesday</label><br>
+                <input type="checkbox">
+                <label>Thusday</label><br>
+                <input type="checkbox">
+                <label>Friday</label><br>
+                <input type="checkbox">
+                <label>Saturday</label><br>
+                <input type="checkbox">
+                <label>Sunday</label>
+
+
+
+            </DIV>
+
+
+
+            <div class="buttons">
+                <button class="back" type="cancle" value="Go back">Go back </button>
+                <button class="submit" type="submit" value="submit">Next</button>
+
+            </div>
+
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>

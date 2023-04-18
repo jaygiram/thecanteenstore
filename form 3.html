@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        BODY {
+            background-image: url("img/Group\ 22.png"), linear-gradient( #AFCDE9, #AF7ED0);
+            background-repeat: no-repeat;
+        }
+        
+        .logo {
+            position: relative;
+            width: 250px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        
+        h4 {
+            color: grey;
+        }
+        
+        .part1 {
+            border-radius: 5PX;
+            border: 5PX white;
+            background-color: aliceblue;
+            margin: 22px 268px;
+            padding: 32px 60px;
+        }
+        
+        .pan1 {
+            width: 350px;
+            padding: 16px 13px 14px 20px;
+        }
+        
+        .pan2 {
+            width: 350px;
+            padding: 16px 13px 14px 20px;
+            margin-left: 5px;
+        }
+        
+        .pan3 {
+            width: 750px;
+            padding: 16px 13px 14px 20px;
+        }
+        
+        .pan4 {
+            border: 3px dotted;
+            padding: 10px 210px 10px 315px;
+            margin-top: 20px;
+            color: #878383c9;
+        }
+        
+        .part2 {
+            border-radius: 5PX;
+            border: 5PX white;
+            background-color: aliceblue;
+            margin: 22px 268px;
+            padding: 32px 60px;
+        }
+        
+        input {
+            border-radius: 5px;
+        }
+        
+        span {
+            color: gray;
+        }
+        
+        label {
+            font-size: 25px;
+        }
+        
+        button {
+            padding: 15px 40px;
+            margin: 10px 10px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        
+        .back {
+            margin-left: 262px;
+        }
+        
+        .check {
+            padding: 15px 40px;
+            margin: 10px 10px;
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: blur;
+            background-color: #5499da;
+            color: azure;
+        }
+        
+        .submit {
+            margin-left: 677px;
+            background-color: #aecce8;
+        }
+        
+        th {
+            padding: 11px 160px;
+        }
+        
+        td {
+            padding: 11px 169px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-div">
+        <form>
+            <img class="logo" src="C:\Users\jay giram\Desktop\project\img\whitelogo png.png" />
+
+            <h1>Upload Legal Documents</h1>
+            <DIV class="part1">
+
+                <h2> PAN details</h2>
+                <h4>We will verify the legal entity with this information
+                </h4>
+
+                <input class="pan1" type="text" placeholder="PAN NUMBER OF LEGAL ENTITY" name="pan_number" required>
+                <input class="pan2" type="text" placeholder="LEGAL ENTITY NAME" name="pan_address" required><br> <br>
+                <input class="pan3" type="text" name="pan number" placeholder="Complete adress of the entry ">
+                <br>
+                <input class="pan4" type="file" placeholder="upload pan card" name="upload_image" required>
+
+
+
+            </DIV>
+
+
+            <DIV class="part2">
+
+                <h2>Bank details </h2>
+                <h4>let us know where to deposit your money</h4>
+                <input class="pan1" type="text" placeholder="Bank Account Number" name="Account_number" required>
+                <input class="pan2" type="text" placeholder="Re-enter Account Number" name="Renumber"><br><br>
+                <input class="pan1" type="text" placeholder="Account type" name="Account_type" required>
+                <input class="pan2" type="text" placeholder="Bank IFSC code " name="IFSC_code" required>
+
+                <h4>please enter a valid pan number</h4>
+
+                <button class="check" type="verify" value="submit">Verified Account Details </button>
+
+            </DIV>
+
+
+
+            <div class="buttons">
+                <button class="back" type="cancle" value="Go back">Go back </button>
+                <button class="submit" type="submit" value="submit">Next</button>
+
+            </div>
+
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>

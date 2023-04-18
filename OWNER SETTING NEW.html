@@ -1,0 +1,2536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /*
+            Figma Background for illustrative/preview purposes only.
+            You can remove this style tag with no consequence
+          */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #AFCDE9;
+        }
+
+        .bg-img {
+            position: absolute;
+            width: 1520px;
+            top: 0%;
+            opacity: 80%;
+        }
+
+        .box1 {
+            margin-top: 86px;
+            background-color: white;
+            width: 1480px;
+            height: 707px;
+            border-radius: 20px;
+            position: sticky;
+        }
+
+        .box2 {
+            margin: -659px;
+            background-color: white;
+            border-radius: 20px;
+            width: 1188px;
+            height: 702px;
+            margin-left: 277px;
+            margin-top: -656px;
+            opacity: 1000%;
+            overflow: hidden;
+            overflow: scroll;
+            scroll-margin: hidden;
+        }
+
+        .box2 {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            overflow-y: scroll;
+        }
+
+        .box2::-webkit-scrollbar {
+            display: none;
+        }
+
+        .logo {
+            width: 250px;
+            margin: 10px;
+        }
+
+        .dropdown {
+            height: 80px;
+        }
+
+        .ID-LOGO {
+            margin: -21px 20px;
+            border-radius: 100%;
+            width: 67px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            top: 35px;
+        }
+
+        NAV A {
+            color: BLACK;
+            font-style: BOLD;
+            text-decoration: none;
+        }
+
+        .flash {
+            margin: 15px -2px;
+        }
+
+        .cylender {
+            position: absolute;
+            background-color: #ffffff;
+            border-radius: 249px;
+            padding: 100px 10pxx;
+            /* margin: 21px; */
+            /* width: 68px; */
+            padding: 219px 724px;
+            margin: -268px 32px;
+        }
+
+        /* ======================================   b   u   t   t   o   n   s  =================================== */
+
+        .buttonss {
+            margin: 7px 30px;
+            padding: 19px 77px;
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: #9779BF;
+            width: 219px;
+        }
+
+        .cb {
+            width: 220px;
+        }
+
+        /*=============================================   D  R  O  P  D  O  W  N =============================================*/
+
+        .tr,
+        th {
+            padding: 4px 55px;
+            color: #f0f0f0;
+            font-size: 20px;
+        }
+
+        .tr,
+        td {
+            padding: 4px 69px;
+        }
+
+        .item {
+            padding: 10px;
+        }
+
+        .dropbtn {
+            background-color: #9779BF;
+            color: white;
+            padding: 21px 536px;
+            font-size: 26px;
+            border: none;
+            cursor: pointer;
+            text-align-last: left;
+            border-radius: 10px;
+            align-items: baseline;
+            width: 1190px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            width: 1194px;
+            display: none;
+            position: absolute;
+            background-color: #9779BF;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            height: 12cm;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            width: 1162px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgb(103, 21, 113);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: rgb(103, 21, 113);
+        }
+
+        .HEADING {
+            background-color: rgb(103, 21, 113);
+            color: #ffffff;
+        }
+
+        .switch {
+            display: block;
+            width: 77px;
+            height: 30px;
+            padding: 3px;
+            margin: 0 10px 10px 0;
+            background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px);
+            background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);
+            border-radius: 18px;
+            box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            box-sizing: content-box;
+            position: relative;
+            left: 35px;
+        }
+
+        .switch-input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            box-sizing: content-box;
+        }
+
+        .switch-label {
+            position: relative;
+            display: block;
+            height: inherit;
+            font-size: 10px;
+            text-transform: uppercase;
+            background: #eceeef;
+            border-radius: inherit;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+            box-sizing: content-box;
+        }
+
+        .switch-label:before,
+        .switch-label:after {
+            position: absolute;
+            top: 50%;
+            margin-top: -.5em;
+            line-height: 1;
+            -webkit-transition: inherit;
+            -moz-transition: inherit;
+            -o-transition: inherit;
+            transition: inherit;
+            box-sizing: content-box;
+        }
+
+        .switch-label:before {
+            content: attr(data-off);
+            right: 11px;
+            color: #aaaaaa;
+            text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+        }
+
+        .switch-label:after {
+            content: attr(data-on);
+            left: 11px;
+            color: #FFFFFF;
+            text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+        }
+
+        .switch-input:checked~.switch-label {
+            background: #E1B42B;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .switch-input:checked~.switch-label:before {
+            opacity: 0;
+        }
+
+        .switch-input:checked~.switch-label:after {
+            opacity: 1;
+        }
+
+        .switch-handle {
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+            background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
+            border-radius: 100%;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .switch-handle:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -6px 0 0 -6px;
+            width: 12px;
+            height: 12px;
+            background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+            background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);
+            border-radius: 6px;
+            box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+        }
+
+        .switch-input:checked~.switch-handle {
+            left: 74px;
+            box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        #button {
+            background-image: linear-gradient(#0dccea, #0d70ea);
+            border: 0;
+            border-radius: 4px;
+            box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            font-family: Montserrat, sans-serif;
+            font-size: .5em;
+            margin: -48px;
+            padding: 11px 11px;
+            top: -23px;
+            text-align: center;
+            left: 5px;
+            user-select: none;
+            position: relative;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            width: 142px;
+        }
+
+        #button2 {
+            padding: 10px;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-image: linear-gradient(#0dccea, #0d70ea);
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            padding: 11px 28px;
+            border: none;
+            cursor: pointer;
+            border-radius: 16px;
+            text-align: center;
+            position: relative;
+            left: 34px;
+            top: 2px;
+        }
+
+        #button2:hover {
+            background-image: linear-gradient(#6318e6, #0da8ea);
+            color: white;
+        }
+
+        #button3 {
+            position: relative;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-image: linear-gradient(#0dccea, #0d70ea);
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            padding: 11px 28px;
+            border: none;
+            cursor: pointer;
+            border-radius: 16px;
+            text-align: center;
+            left: -63px;
+            top: 3px;
+        }
+
+        #button3:hover {
+            background-image: linear-gradient(#6318e6, #0da8ea);
+            color: white;
+        }
+
+        #button4 {
+            left: -145px;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-image: linear-gradient(#0dccea, #0d70ea);
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            padding: 11px 28px;
+            border: none;
+            position: relative;
+            cursor: pointer;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        #button4:hover {
+            background-image: linear-gradient(#6318e6, #0da8ea);
+            color: white;
+        }
+
+        .item {
+            position: relative;
+            left: 34px;
+            color: white;
+            font-size: 25px;
+        }
+
+        .price {
+            position: relative;
+            left: 70px;
+            color: white;
+            font-size: 25px;
+        }
+
+        /* ==================================  S l i d e s h o w ========================================================*/
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* ============================================   f    o   o   t   e   r   ============================================ */
+
+        #h3 {
+            position: relative;
+            left: -33px;
+            size: normal;
+            opacity: 50%;
+        }
+
+        .payment img {
+            height: 110px;
+            padding: 6px 6px 9px 6px;
+        }
+
+        a {
+            padding-right: 60px;
+        }
+
+        #h2 {
+            left: 11px;
+            position: relative;
+            font-size: 18px;
+        }
+
+        #h2 {
+            left: 11px;
+            position: relative;
+            font-size: 18px;
+        }
+
+        .payment {
+            position: absolute;
+            right: 0px;
+            padding: 10px;
+            margin-top: -5pc;
+        }
+
+        .links a {
+            color: #ffffff;
+            text-decoration: none;
+            padding-right: 60px;
+        }
+
+        .links .anc1 li {
+            list-style: none;
+            padding: 10px;
+            opacity: 50%;
+        }
+
+        .links {
+            display: flex;
+            top: 50px;
+            left: 45%;
+            position: relative;
+            color: #18191A;
+            left: 650px;
+        }
+
+        .media a img {
+            display: inline-block;
+            text-align: center;
+            height: 30px;
+            margin: 24px -30px 0px 0px;
+        }
+
+        .media a {
+            display: inline-block;
+            text-align: center;
+            margin: 0px;
+        }
+
+        .media {
+            margin: 0px;
+        }
+
+        #im2 {
+            height: 55px;
+        }
+
+        .part1 {
+            position: absolute;
+            left: 60px;
+            top: 30px;
+        }
+
+        footer {
+            background-color: #092A48;
+            position: relative;
+            bottom: 0px;
+            top: 1130px;
+            display: flex;
+            height: 200px
+        }
+
+        .availabel {
+            position: relative;
+            left: 34px;
+            color: white;
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <img class="bg-img" src="C:\Users\jay giram\Desktop\project\img\2 ELLIPS.png ">
+
+    <nav>
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/python/">Python</a>
+        <img class="ID-LOGO" src="C:\Users\jay giram\Desktop\project\img\download (1).jpg">
+    </nav>
+
+    <div class="box1 ">
+        <img class="logo "
+            src="C:\Users\jay giram\Desktop\project\img\WhatsApp_Image_2023-02-24_at_01.36_1-removebg-preview.png ">
+        <aside>
+
+            <button class="buttonss ">Home
+            </button>
+            <br>
+            <button class="buttonss ">Setting
+            </button>
+            <br>
+            <button class="buttonss cb "> Counter Billing
+            </button>
+            <br>
+            <button class="buttonss ">Product
+            </button>
+            <br>
+            <button class="buttonss ">Delivery
+            </button>
+            <BR>
+            <button class="buttonss ">Catogary
+            </button>
+            <br>
+            <button class="buttonss ">Histeory
+            </button>
+
+        </aside>
+
+
+        <!----------------==============================   b   o   x    2   ==================================----------------->
+
+        <div class="box2">
+
+            <div class="dropdown">
+                <button class="dropbtn">
+
+                    <span>Dropdown</span></button>
+                <div class="dropdown-content">
+
+                    <div class="HEADING ">
+                        <a href="#">
+                            <table>
+                                <TR>
+                                    <th>
+                                        <div class="ei386_719_386_101">Item Name </div>
+                                    </Th>
+                                    <Th>
+                                        <div class="ei386_719_386_143">Price </div>
+                                    </Th>
+                                    <Th>
+                                        <div class="ei386_719_386_149">Available</div>
+                                    </Th>
+
+                                    <Th>
+                                        <div class="">Upload Image</div>
+                                    </Th>
+                                    <th>
+                                        <div> Delete</button>
+                                    </th>
+                                    <th>
+                                        <div> Edit</button>
+                                    </th>
+                                    <th>
+                                        <div> Save</button>
+                                    </th>
+                                </TR>
+                            </table>
+
+
+                        </a>
+                    </div>
+
+
+
+
+                    <!--------------item 11111111111111111111111111111111111111111111111111111111111111111111111111--------------->
+
+                    <div class="item1">
+                        <a href="#">
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                            left: 34px;
+                                            color: white;
+                                            font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+                            </table>
+
+
+                        </a>
+
+                    </div>
+
+                    <!-----------222222222222222222222222222222222222222222222222222222222222222222222222-------------->
+
+                    <div class="itrm 2">
+                        <a href="#">
+
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                        left: 34px;
+                                        color: white;
+                                        font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+
+                            </table>
+
+
+                        </a>
+
+                    </div>
+
+
+
+                    <!-----------------3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333-->
+
+                    <div class="itrm 3">
+                        <a href="#">
+
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                            left: 34px;
+                                            color: white;
+                                            font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+
+                            </table>
+
+
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+            <!---------------------------------- N  E  W  D  R  O  P  D  O  W  N  ----------------------------------------->
+
+
+
+
+
+            <div class="dropdown">
+                <button class="dropbtn"><span>Dropdown</span></button>
+                <div class="dropdown-content">
+
+                    <div class="HEADING ">
+                        <a href="#">
+                            <table>
+                                <TR>
+                                    <th>
+                                        <div class="ei386_719_386_101">Item Name </div>
+                                    </Th>
+                                    <Th>
+                                        <div class="ei386_719_386_143">Price </div>
+                                    </Th>
+                                    <Th>
+                                        <div class="ei386_719_386_149">Available</div>
+                                    </Th>
+
+                                    <Th>
+                                        <div class="">Upload Image</div>
+                                    </Th>
+                                    <th>
+                                        <div> Delete</button>
+                                    </th>
+                                    <th>
+                                        <div> Edit</button>
+                                    </th>
+                                    <th>
+                                        <div> Save</button>
+                                    </th>
+                                </TR>
+                            </table>
+
+
+                        </a>
+                    </div>
+
+
+
+
+                    <!--------------item 11111111111111111111111111111111111111111111111111111111111111111111111111--------------->
+
+                    <div class="item1">
+                        <a href="#">
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                            left: 34px;
+                                                            color: white;
+                                                            font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+                            </table>
+
+
+                        </a>
+
+                    </div>
+
+                    <!-----------222222222222222222222222222222222222222222222222222222222222222222222222-------------->
+
+                    <div class="itrm 2">
+                        <a href="#">
+
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                        left: 34px;
+                                                        color: white;
+                                                        font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+
+                            </table>
+
+
+                        </a>
+
+                    </div>
+
+
+
+                    <!-----------------3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333-->
+
+                    <div class="itrm 3">
+                        <a href="#">
+
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                            left: 34px;
+                                                            color: white;
+                                                            font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+
+                            </table>
+
+
+                        </a>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!---------------------------------- N  E  W  D  R  O  P  D  O  W  N  ----------------------------------------->
+
+
+
+
+
+            <div class="dropdown">
+                <button class="dropbtn"><span>Dropdown</span></button>
+                <div class="dropdown-content">
+
+                    <div class="HEADING ">
+                        <a href="#">
+                            <table>
+                                <TR>
+                                    <th>
+                                        <div class="ei386_719_386_101">Item Name </div>
+                                    </Th>
+                                    <Th>
+                                        <div class="ei386_719_386_143">Price </div>
+                                    </Th>
+                                    <Th>
+                                        <div class="ei386_719_386_149">Available</div>
+                                    </Th>
+
+                                    <Th>
+                                        <div class="">Upload Image</div>
+                                    </Th>
+                                    <th>
+                                        <div> Delete</button>
+                                    </th>
+                                    <th>
+                                        <div> Edit</button>
+                                    </th>
+                                    <th>
+                                        <div> Save</button>
+                                    </th>
+                                </TR>
+                            </table>
+
+
+                        </a>
+                    </div>
+
+
+
+
+                    <!--------------item 11111111111111111111111111111111111111111111111111111111111111111111111111--------------->
+
+                    <div class="item1">
+                        <a href="#">
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                            left: 34px;
+                                                            color: white;
+                                                            font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+                            </table>
+
+
+                        </a>
+
+                    </div>
+
+                    <!-----------222222222222222222222222222222222222222222222222222222222222222222222222-------------->
+
+                    <div class="itrm 2">
+                        <a href="#">
+
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                        left: 34px;
+                                                        color: white;
+                                                        font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+
+                            </table>
+
+
+                        </a>
+
+                    </div>
+
+
+
+                    <!-----------------3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333-->
+
+                    <div class="itrm 3">
+                        <a href="#">
+
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                            left: 34px;
+                                                            color: white;
+                                                            font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+
+                            </table>
+
+
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!---------------------------------- N  E  W  D  R  O  P  D  O  W  N  ----------------------------------------->
+
+
+
+
+
+            <div class="dropdown">
+                <button class="dropbtn"><span>Dropdown</span></button>
+                <div class="dropdown-content">
+
+                    <div class="HEADING ">
+                        <a href="#">
+                            <table>
+                                <TR>
+                                    <th>
+                                        <div class="ei386_719_386_101">Item Name </div>
+                                    </Th>
+                                    <Th>
+                                        <div class="ei386_719_386_143">Price </div>
+                                    </Th>
+                                    <Th>
+                                        <div class="ei386_719_386_149">Available</div>
+                                    </Th>
+
+                                    <Th>
+                                        <div class="">Upload Image</div>
+                                    </Th>
+                                    <th>
+                                        <div> Delete</button>
+                                    </th>
+                                    <th>
+                                        <div> Edit</button>
+                                    </th>
+                                    <th>
+                                        <div> Save</button>
+                                    </th>
+                                </TR>
+                            </table>
+
+
+                        </a>
+                    </div>
+
+
+
+
+                    <!--------------item 11111111111111111111111111111111111111111111111111111111111111111111111111--------------->
+
+                    <div class="item1">
+                        <a href="#">
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                            left: 34px;
+                                                            color: white;
+                                                            font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+                            </table>
+
+
+                        </a>
+
+                    </div>
+
+                    <!-----------222222222222222222222222222222222222222222222222222222222222222222222222-------------->
+
+                    <div class="itrm 2">
+                        <a href="#">
+
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                        left: 34px;
+                                                        color: white;
+                                                        font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+
+                            </table>
+
+
+                        </a>
+
+                    </div>
+
+
+
+                    <!-----------------3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333-->
+
+                    <div class="itrm 3">
+                        <a href="#">
+
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                            left: 34px;
+                                                            color: white;
+                                                            font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+
+                            </table>
+
+
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!---------------------------------- N  E  W  D  R  O  P  D  O  W  N  ----------------------------------------->
+
+
+
+
+
+            <div class="dropdown">
+                <button class="dropbtn"><span>Dropdown</span></button>
+                <div class="dropdown-content">
+
+                    <div class="HEADING ">
+                        <a href="#">
+                            <table>
+                                <TR>
+                                    <th>
+                                        <div class="ei386_719_386_101">Item Name </div>
+                                    </Th>
+                                    <Th>
+                                        <div class="ei386_719_386_143">Price </div>
+                                    </Th>
+                                    <Th>
+                                        <div class="ei386_719_386_149">Available</div>
+                                    </Th>
+
+                                    <Th>
+                                        <div class="">Upload Image</div>
+                                    </Th>
+                                    <th>
+                                        <div> Delete</button>
+                                    </th>
+                                    <th>
+                                        <div> Edit</button>
+                                    </th>
+                                    <th>
+                                        <div> Save</button>
+                                    </th>
+                                </TR>
+                            </table>
+
+
+                        </a>
+                    </div>
+
+
+
+
+                    <!--------------item 11111111111111111111111111111111111111111111111111111111111111111111111111--------------->
+
+                    <div class="item1">
+                        <a href="#">
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                            left: 34px;
+                                                            color: white;
+                                                            font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+                            </table>
+
+
+                        </a>
+
+                    </div>
+
+                    <!-----------222222222222222222222222222222222222222222222222222222222222222222222222-------------->
+
+                    <div class="itrm 2">
+                        <a href="#">
+
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                        left: 34px;
+                                                        color: white;
+                                                        font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+
+                            </table>
+
+
+                        </a>
+
+                    </div>
+
+
+
+                    <!-----------------3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333-->
+
+                    <div class="itrm 3">
+                        <a href="#">
+
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                            left: 34px;
+                                                            color: white;
+                                                            font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+
+                            </table>
+
+
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!---------------------------------- N  E  W  D  R  O  P  D  O  W  N  ----------------------------------------->
+
+
+
+
+
+            <div class="dropdown">
+                <button class="dropbtn"><span>Dropdown</span></button>
+                <div class="dropdown-content">
+
+                    <div class="HEADING ">
+                        <a href="#">
+                            <table>
+                                <TR>
+                                    <th>
+                                        <div class="ei386_719_386_101">Item Name </div>
+                                    </Th>
+                                    <Th>
+                                        <div class="ei386_719_386_143">Price </div>
+                                    </Th>
+                                    <Th>
+                                        <div class="ei386_719_386_149">Available</div>
+                                    </Th>
+
+                                    <Th>
+                                        <div class="">Upload Image</div>
+                                    </Th>
+                                    <th>
+                                        <div> Delete</button>
+                                    </th>
+                                    <th>
+                                        <div> Edit</button>
+                                    </th>
+                                    <th>
+                                        <div> Save</button>
+                                    </th>
+                                </TR>
+                            </table>
+
+
+                        </a>
+                    </div>
+
+
+
+
+                    <!--------------item 11111111111111111111111111111111111111111111111111111111111111111111111111--------------->
+
+                    <div class="item1">
+                        <a href="#">
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                            left: 34px;
+                                                            color: white;
+                                                            font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+                            </table>
+
+
+                        </a>
+
+                    </div>
+
+                    <!-----------222222222222222222222222222222222222222222222222222222222222222222222222-------------->
+
+                    <div class="itrm 2">
+                        <a href="#">
+
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                        left: 34px;
+                                                        color: white;
+                                                        font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+
+                            </table>
+
+
+                        </a>
+
+                    </div>
+
+
+
+                    <!-----------------3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333-->
+
+                    <div class="itrm 3">
+                        <a href="#">
+
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                            left: 34px;
+                                                            color: white;
+                                                            font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+
+                            </table>
+
+
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!---------------------------------- N  E  W  D  R  O  P  D  O  W  N  ----------------------------------------->
+
+
+
+
+
+            <div class="dropdown">
+                <button class="dropbtn"><span>Dropdown</span></button>
+                <div class="dropdown-content">
+
+                    <div class="HEADING ">
+                        <a href="#">
+                            <table>
+                                <TR>
+                                    <th>
+                                        <div class="ei386_719_386_101">Item Name </div>
+                                    </Th>
+                                    <Th>
+                                        <div class="ei386_719_386_143">Price </div>
+                                    </Th>
+                                    <Th>
+                                        <div class="ei386_719_386_149">Available</div>
+                                    </Th>
+
+                                    <Th>
+                                        <div class="">Upload Image</div>
+                                    </Th>
+                                    <th>
+                                        <div> Delete</button>
+                                    </th>
+                                    <th>
+                                        <div> Edit</button>
+                                    </th>
+                                    <th>
+                                        <div> Save</button>
+                                    </th>
+                                </TR>
+                            </table>
+
+
+                        </a>
+                    </div>
+
+
+
+
+                    <!--------------item 11111111111111111111111111111111111111111111111111111111111111111111111111--------------->
+
+                    <div class="item1">
+                        <a href="#">
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                            left: 34px;
+                                                            color: white;
+                                                            font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+                            </table>
+
+
+                        </a>
+
+                    </div>
+
+                    <!-----------222222222222222222222222222222222222222222222222222222222222222222222222-------------->
+
+                    <div class="itrm 2">
+                        <a href="#">
+
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                        left: 34px;
+                                                        color: white;
+                                                        font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+
+                            </table>
+
+
+                        </a>
+
+                    </div>
+
+
+
+                    <!-----------------3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333-->
+
+                    <div class="itrm 3">
+                        <a href="#">
+
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                            left: 34px;
+                                                            color: white;
+                                                            font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+
+                            </table>
+
+
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!---------------------------------- N  E  W  D  R  O  P  D  O  W  N  ----------------------------------------->
+
+
+
+
+
+            <div class="dropdown">
+                <button class="dropbtn"><span>Dropdown</span></button>
+                <div class="dropdown-content">
+
+                    <div class="HEADING ">
+                        <a href="#">
+                            <table>
+                                <TR>
+                                    <th>
+                                        <div class="ei386_719_386_101">Item Name </div>
+                                    </Th>
+                                    <Th>
+                                        <div class="ei386_719_386_143">Price </div>
+                                    </Th>
+                                    <Th>
+                                        <div class="ei386_719_386_149">Available</div>
+                                    </Th>
+
+                                    <Th>
+                                        <div class="">Upload Image</div>
+                                    </Th>
+                                    <th>
+                                        <div> Delete</button>
+                                    </th>
+                                    <th>
+                                        <div> Edit</button>
+                                    </th>
+                                    <th>
+                                        <div> Save</button>
+                                    </th>
+                                </TR>
+                            </table>
+
+
+                        </a>
+                    </div>
+
+
+
+
+                    <!--------------item 11111111111111111111111111111111111111111111111111111111111111111111111111--------------->
+
+                    <div class="item1">
+                        <a href="#">
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                            left: 34px;
+                                                            color: white;
+                                                            font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+                            </table>
+
+
+                        </a>
+
+                    </div>
+
+                    <!-----------222222222222222222222222222222222222222222222222222222222222222222222222-------------->
+
+                    <div class="itrm 2">
+                        <a href="#">
+
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                        left: 34px;
+                                                        color: white;
+                                                        font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+
+                            </table>
+
+
+                        </a>
+
+                    </div>
+
+
+
+                    <!-----------------3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333-->
+
+                    <div class="itrm 3">
+                        <a href="#">
+
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                            left: 34px;
+                                                            color: white;
+                                                            font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+
+                            </table>
+
+
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <!---------------------------------- N  E  W  D  R  O  P  D  O  W  N  ----------------------------------------->
+
+
+
+
+
+            <div class="dropdown">
+                <button class="dropbtn"><span>Dropdown</span></button>
+                <div class="dropdown-content">
+
+                    <div class="HEADING ">
+                        <a href="#">
+                            <table>
+                                <TR>
+                                    <th>
+                                        <div class="ei386_719_386_101">Item Name </div>
+                                    </Th>
+                                    <Th>
+                                        <div class="ei386_719_386_143">Price </div>
+                                    </Th>
+                                    <Th>
+                                        <div class="ei386_719_386_149">Available</div>
+                                    </Th>
+
+                                    <Th>
+                                        <div class="">Upload Image</div>
+                                    </Th>
+                                    <th>
+                                        <div> Delete</button>
+                                    </th>
+                                    <th>
+                                        <div> Edit</button>
+                                    </th>
+                                    <th>
+                                        <div> Save</button>
+                                    </th>
+                                </TR>
+                            </table>
+
+
+                        </a>
+                    </div>
+
+
+
+
+                    <!--------------item 11111111111111111111111111111111111111111111111111111111111111111111111111--------------->
+
+                    <div class="item1">
+                        <a href="#">
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                            left: 34px;
+                                                            color: white;
+                                                            font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+                            </table>
+
+
+                        </a>
+
+                    </div>
+
+                    <!-----------222222222222222222222222222222222222222222222222222222222222222222222222-------------->
+
+                    <div class="itrm 2">
+                        <a href="#">
+
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                        left: 34px;
+                                                        color: white;
+                                                        font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+
+                            </table>
+
+
+                        </a>
+
+                    </div>
+
+
+
+                    <!-----------------3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333-->
+
+                    <div class="itrm 3">
+                        <a href="#">
+
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                            left: 34px;
+                                                            color: white;
+                                                            font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+
+                            </table>
+
+
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!---------------------------------- N  E  W  D  R  O  P  D  O  W  N  ----------------------------------------->
+
+
+
+
+
+            <div class="dropdown">
+                <button class="dropbtn"><span>Dropdown</span></button>
+                <div class="dropdown-content">
+
+                    <div class="HEADING ">
+                        <a href="#">
+                            <table>
+                                <TR>
+                                    <th>
+                                        <div class="ei386_719_386_101">Item Name </div>
+                                    </Th>
+                                    <Th>
+                                        <div class="ei386_719_386_143">Price </div>
+                                    </Th>
+                                    <Th>
+                                        <div class="ei386_719_386_149">Available</div>
+                                    </Th>
+
+                                    <Th>
+                                        <div class="">Upload Image</div>
+                                    </Th>
+                                    <th>
+                                        <div> Delete</button>
+                                    </th>
+                                    <th>
+                                        <div> Edit</button>
+                                    </th>
+                                    <th>
+                                        <div> Save</button>
+                                    </th>
+                                </TR>
+                            </table>
+
+
+                        </a>
+                    </div>
+
+
+
+
+                    <!--------------item 11111111111111111111111111111111111111111111111111111111111111111111111111--------------->
+
+                    <div class="item1">
+                        <a href="#">
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                            left: 34px;
+                                                            color: white;
+                                                            font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+                            </table>
+
+
+                        </a>
+
+                    </div>
+
+                    <!-----------222222222222222222222222222222222222222222222222222222222222222222222222-------------->
+
+                    <div class="itrm 2">
+                        <a href="#">
+
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                        left: 34px;
+                                                        color: white;
+                                                        font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+
+                            </table>
+
+
+                        </a>
+
+                    </div>
+
+
+
+                    <!-----------------3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333-->
+
+                    <div class="itrm 3">
+                        <a href="#">
+
+                            <table>
+                                <TR>
+                                    <TD class="item">
+                                        <div class="item name">Item Name </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="price">7/- </div>
+                                    </TD>
+                                    <TD>
+                                        <div class="available" style="position: relative;
+                                                            left: 34px;
+                                                            color: white;
+                                                            font-size: 25px;">Available</div>
+
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox" />
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </TD>
+                                    <TD>
+                                        <input type="file" id="button" name="filename">
+
+                                    </TD>
+                                    <td>
+                                        <button type="Delete" id="button2">Delete</button>
+                                    </TD>
+                                    <td>
+                                        <button type="Edit" id="button3">Edit</button>
+                                    </td>
+                                    <td>
+                                        <button type="Save" id="button4">Save</button>
+                                    </td>
+                                </TR>
+
+                            </table>
+
+
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------s  l  i  d  e s  h  o  w ---------------------------------------------------->
+
+    <div class="SLODE-SHOW">
+
+
+        <img class="flash" src="C:\Users\jay giram\Desktop\project\img\image 20.png">
+        <div class="cylender">
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!------------============================   f  o   o   t   e   r   =========================----------------->
+
+    <footer>
+        <div class="footer">
+            <div class="part1">
+                <div class="logo2">
+                    <img src="C:\Users\shiva\project final year\canteen-store-low-resolution-logo-white-on-transparent-background 1.png"
+                        alt="logo" color="sky blue" height="50" id="im2">
+                    </img>
+                </div>
+                <div class="media">
+                    <a href=""><img src="C:\Users\shiva\project final year\icons8-instagram-24.png" alt="insta"
+                            id="im3">
+                        </img>
+                    </a>
+                    <a href=""><img src="C:\Users\shiva\project final year\icons8-facebook-24.png" alt="facebook"
+                            id="im4" /></a>
+                    <a href=><img src="C:\Users\shiva\project final year\icons8-whatsapp-24.png" alt="what's app"
+                            id="im5" /></a>
+                    <a href=""><img src="C:\Users\shiva\project final year\icons8-twitter-24.png" alt="twitter"
+                            id="im6" /></a>
+                </div>
+
+            </div>
+            <div class="links">
+                <div class="anc1">
+                    <ul>
+                        <li> <a href="#home">HOME</a></li>
+
+                        <li><a href="#ser1">SERVICE</a></li>
+
+                        <li> <a href="#abo">ABOUT US</a></li>
+                    </ul>
+                </div>
+                <div class="anc2">
+                    <ul>
+                        <li> <a href="">COMMUNITY</a></li>
+
+                        <li> <a href="">TERMS&CONDITION</a></li>
+
+                        <li> <a href="">PRIVECY&POLICY</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="payment">
+                <h3 id="h2">Payment Mathod</h3>
+                <a href="#home"><img src="C:\Users\shiva\project final year\icon.png" alt="payment" id="im7"></a>
+                <p id="h3">copyright 2023 all rights reserved</p>
+            </div>
+
+    </footer>
+
+
+
+
+</body>
